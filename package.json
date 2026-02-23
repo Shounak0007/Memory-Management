@@ -1,0 +1,27 @@
+{
+  "name": "memory-agent",
+  "version": "1.0.0",
+  "description": "Personal Memory Agent - Root Package",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "test:legacy": "node test-runner.js",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev"
+  },
+  "keywords": [
+    "memory",
+    "agent",
+    "testing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.58.1",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  }
+}
